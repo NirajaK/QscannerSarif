@@ -34,7 +34,7 @@ jobs:
       # - name: Docker version
       #   run: docker info
       - name: Docker image pull
-        run: sudo docker pull alpine:latest
+        run: sudo docker pull iojs:latest
       # - name: Docker qscanner image pull
       #   run: sudo docker pull art-hq.intranet.qualys.com:5001/qualys/internal/qscanner:4.3.0-12-dev-linux-amd64-1728887376
       # - name: Build Docker image
@@ -73,7 +73,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v3
         with:
           # Path to SARIF file relative to the root of the repository
-          sarif_file: /home/ubuntu/Qscanner-4.3/sarif-reports/91ef0af61f39ece4d6710e465df5ed6ca12112358344fd51ae6a3b886634148b-Report.sarif.json
+          sarif_file: /home/ubuntu/Qscanner-4.3/sarif-reports/fdab38ea8e39d1bd42b3ef244e6ea4f85a72b41608c6f372bd9de4ba900b4f99-Report.sarif.json
           # Optional category for the results
           # Used to differentiate multiple results for one commit
           category: my-analysis-tool
